@@ -34,12 +34,9 @@ const numbersAndOperators = {
 // equations being randomized
 // input area
 
-let calculator;
 let output;
 
 /*----- cached element references -----*/
-
-// number buttons
 
 $numAndEqButtons = $("#buttons");
 $clearBtn = $("#clear");
@@ -68,7 +65,7 @@ function addToInput (evt) {
     if (evt.target.dataset.value !== "=") {
         output += evt.target.dataset.value;
     } else {
-        output = "";
+        computeEq(output);
     }
     render();
 };
@@ -82,6 +79,14 @@ function render() {
 };
 
 // compute function
-function computeEq () {
-
+function computeEq (arg) {
+    if (arg.includes("+")) {
+        // alert("this includes addition!");
+    } else if (arg.includes("-")) {
+        alert("this includes subtraction!");
+    } else if (arg.includes("/")) {
+        alert("this includes division!");
+    } else if (arg.includes("*")) {
+        alert("this includes multiplication!");
+    }
 };
