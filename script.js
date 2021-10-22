@@ -1,31 +1,10 @@
 /*----- constants -----*/
 
-const numbersAndOperators = {
-    '1':1,
-    '2':2,
-    '3':3,
-    '4':4,
-    '5':5,
-    '6':6,
-    '7':7,
-    '8':8,
-    '9':9,
-    '0':0,
-    'clr': null,
-    '/': '/',
-    '*': '*',
-    '-': '-',
-    '+': '+',
-    '=': '='
-};
-
 // number buttons (cached below)
 
 // position of buttons (datasets)
 
 // operation buttons (+, -, /, *) (cached below)
-// numbers
-// operations
  
 /*----- app's state (variables) -----*/
 
@@ -86,6 +65,9 @@ function render() {
 };
 
 // compute function
+// result variable creates new function with
+// expression in it, returns the solved expression
+// sets output variable to equal the solution
 function computeEq (exp) {
     let result = Function("return " + exp)();
     output = result;
