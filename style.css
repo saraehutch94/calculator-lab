@@ -65,8 +65,13 @@ body {
     font-size: 55px;
     background-color: rgb(104, 255, 104);
     border-radius: 12px;
+    margin: 0 0 10px 0;
 }
 
 .button:hover, #clear:hover {
     background-color: rgb(189, 252, 189);
+}
+
+.operator, .decimal {
+    border-radius: 12px;
 }
